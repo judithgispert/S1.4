@@ -16,6 +16,12 @@ class TestMonth {
 	}
 	
 	@Test
+	public void testNull() {
+		assertNotNull(Month.getMonthList());
+	}
+	
+	
+	@Test
 	public void testMonth() {
 		
 		String monthResult = Month.getMonthList().get(8-1);
