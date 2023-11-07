@@ -1,15 +1,14 @@
 package N1Ex2;
 
 
-import static org.junit.Assert.assertEquals;
 
-
-import org.junit.Test;
+import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-@RunWith(value = Parameterized.class)
+import static org.junit.jupiter.api.Assertions.*;
+
+
 
 class TestCalculo {
 	
@@ -19,10 +18,9 @@ class TestCalculo {
 			"66453273, V", "32356736, Z"})
 	
 
-	@Test
+	@ParameterizedTest
 	public void TestCalculoDni(int numDni, char expResult) {
-		CalculoDni calculoDni = new CalculoDni();
-		char result = calculoDni.letterDni(numDni);
+		char result = CalculoDni.letterDni(numDni);
 		assertEquals(expResult, result);
 	}
 

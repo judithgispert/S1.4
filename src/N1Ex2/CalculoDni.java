@@ -2,7 +2,7 @@ package N1Ex2;
 
 public class CalculoDni {
 	
-	public char letterDni(int numDni) {
+	public static char letterDni(int numDni) {
 		
 		int numLetter = (numDni % 23);
 		
