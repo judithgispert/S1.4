@@ -6,8 +6,12 @@ public class ListClass {
 	
 
 	
-	public String getElement (ArrayList<String> lista, int cont){
-		return lista.get(cont);
+	public String getElement (int cont) throws IndexOutOfBoundsException{
+		ArrayList <String> elementsList = new ArrayList<String>();
+		elementsList.add("Wave");
+		elementsList.add("Ocean");
+		elementsList.add("River");
+		return elementsList.get(cont);
 	}
 
 }
